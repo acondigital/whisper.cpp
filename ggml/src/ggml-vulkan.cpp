@@ -1,3 +1,5 @@
+#if defined(GGML_USE_VULKAN)
+
 #include "ggml-vulkan.h"
 #include <vulkan/vulkan_core.h>
 #if defined(GGML_VULKAN_RUN_TESTS) || defined(GGML_VULKAN_PERF)
@@ -7404,3 +7406,5 @@ static void ggml_vk_check_results_1(ggml_tensor * tensor) {
     VK_LOG_DEBUG("END ggml_vk_check_results_1(" << tensor->name << ")");
 }
 #endif
+
+#endif // GGML_USE_VULKAN

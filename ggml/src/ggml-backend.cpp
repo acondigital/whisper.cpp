@@ -8,6 +8,8 @@
 #include <windows.h>
 #endif
 
+#pragma warning (disable : 4505)
+
 #include "ggml-backend-impl.h"
 #include "ggml-alloc.h"
 #include "ggml-impl.h"

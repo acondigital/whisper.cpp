@@ -1,5 +1,7 @@
 #if defined(GGML_USE_VULKAN)
 
+#pragma warning (disable : 4101 4267 4297 4244 4505 4701 4702)
+
 #include "ggml-vulkan.h"
 #include <vulkan/vulkan_core.h>
 #if defined(GGML_VULKAN_RUN_TESTS) || defined(GGML_VULKAN_PERF)

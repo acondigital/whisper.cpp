@@ -1,4 +1,7 @@
 #define GGML_COMMON_IMPL_C
+
+#pragma warning (disable : 4201 4244)
+
 #include "ggml-common.h"
 
 #include "ggml-quants.h"

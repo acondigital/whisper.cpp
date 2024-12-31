@@ -1,6 +1,8 @@
 #define _CRT_SECURE_NO_DEPRECATE // Disables ridiculous "unsafe" warnings on Windows
 #define _USE_MATH_DEFINES // For M_PI on MSVC
 
+#pragma warning (disable : 4100 4127 4201 4244 4324 4701)
+
 #include "ggml-backend.h"
 #include "ggml-impl.h"
 #include "ggml-cpu-impl.h"

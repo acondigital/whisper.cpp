@@ -1,5 +1,7 @@
 #include "whisper.h"
 
+#pragma warning (disable : 4100 4324 4127 4456 4505 4701 4996)
+
 #ifdef WHISPER_USE_COREML
 #include "coreml/whisper-encoder.h"
 #endif
